@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Messager</name>
+    </assembly>
+    <members>
+        <member name="M:Messager.Controllers.MessageController.GenerateMessages(System.Int32)">
+            <summary>
+            Генерирует указанное количество сообщений между существующими пользователями.
+            </summary>
+            <param name="ammountOfMessages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.MessageController.Get">
+            <summary>
+            Выводит список всех сообщений
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.MessageController.LoadUsers">
+            <summary>
+            Загружает сообщения из json файла в папке Messager
+            </summary>
+            <param name="jsonUsersFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.MessageController.GetFromUser(System.String)">
+            <summary>
+            Вывод списка сообщений по по идентификатору отправителя.
+            </summary>
+            <param name="senderEmail">идентификатор отправителя</param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.MessageController.GetToUser(System.String)">
+            <summary>
+            Вывод списка сообщений по по идентификатору получателя.
+            </summary>
+            <param name="receiverEmail">идентификатор получателя</param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.MessageController.GetBetweenUsers(System.String,System.String)">
+            <summary>
+            Вывод писка сообщений по идентификатору отправителя и получателя.
+            </summary>
+            <param name="senderEmail"></param>
+            <param name="receiverEmail"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Messager.Controllers.UserController.rnd">
+            <summary>
+            Для генерации
+            </summary>
+        </member>
+        <member name="M:Messager.Controllers.UserController.GenerateUsers(System.Int32)">
+            <summary>
+            Заменяет пользователей в файле на сгенерированное указанное количество пользователей
+            </summary>
+            <param name="ammountOfUsers">Количество пользователей</param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.UserController.AddUser(System.String,System.String)">
+            <summary>
+            Добавляет пользователя
+            </summary>
+            <param name="Name"></param>
+            <param name="Mail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.UserController.LoadUsers">
+            <summary>
+            Загружает пользователей из json файла в папке Messager
+            </summary>
+            <param name="jsonUsersFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Messager.Controllers.UserController.GenerateUser">
+            <summary>
+            Генерирует пользователя
+            </summary>
+            <returns>Обьект класса UserInfo</returns>
+        </member>
+        <member name="M:Messager.Controllers.UserController.Get(System.String)">
+            <summary>
+            Получает пользователя по его идентификатору
+            </summary>
+            <param name="email">Идентификатор</param>
+            <returns>Пользователя</returns>
+        </member>
+        <member name="M:Messager.Controllers.UserController.Get">
+            <summary>
+            Выводит список всех пользователей
+            </summary>
+            <returns>Список пользователей</returns>
+        </member>
+        <member name="T:Messager.Models.MessageInfo">
+            <summary>
+            Реализует сообщение согласно тз
+            </summary>
+        </member>
+        <member name="T:Messager.Models.UserInfo">
+            <summary>
+            Реализует информацию о пользователе согласно тз
+            </summary>
+        </member>
+        <member name="P:Messager.Models.UserInfo.UserName">
+            <summary>
+            Имя пользователя
+            </summary>
+        </member>
+        <member name="P:Messager.Models.UserInfo.Email">
+            <summary>
+            Имя пользователя
+            </summary>
+        </member>
+    </members>
+</doc>
